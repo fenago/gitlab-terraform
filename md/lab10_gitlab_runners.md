@@ -1,4 +1,4 @@
-### Run GitLab Runner in a container
+### Lab: Run GitLab Runner in a container
 
 We can run github runners locally. In this lab, we will register gitlab-runner on `gitlab.com`.
 
