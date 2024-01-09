@@ -1,0 +1,9 @@
+git bisect start
+# bad: [963e7c967039334f4551dbad5f43ad5d9f82b7ec] Adding Pellentesque
+git bisect bad 963e7c967039334f4551dbad5f43ad5d9f82b7ec
+# good: [b87f0e18a937183094c2afe77c639017f25d1d97] Initial commit of the list
+git bisect good b87f0e18a937183094c2afe77c639017f25d1d97
+# good: [3a5af2452b2e9ac2726c26a04b5aecbf121df644] Final Item
+git bisect good 3a5af2452b2e9ac2726c26a04b5aecbf121df644
+# bad: [ee8d71798499a65b0590b9bb4111e779a177090b] Adding Quisque
+git bisect bad ee8d71798499a65b0590b9bb4111e779a177090b
