@@ -28,17 +28,17 @@ Before you start this lab, you must
 
 1. On the Access Management page, select the Service Accounts tab.
 
-    ![](./images/0.png)
+    ![](./images/_0.png)
 
 2. Click Create.
 
 3. Enter a **Account name** and **Description**.
-    ![](./images/1.png)
+    ![](./images/_1.png)
 
 4. Create and export an **API** key.
-    ![](./images/2.png)
+    ![](./images/_2.png)
 
-    ![](./images/3.png)
+    ![](./images/_3.png)
 
 5. Confirm creation of the service account.
 
@@ -48,11 +48,11 @@ Before you start this lab, you must
 
 2. In the row for the target service account, click, click the three-dots **Action** button and select **Edit Roles**.
 
-    ![](./images/4.png)
+    ![](./images/_4.png)
 
 3. Add the new role Cluster Administrator and click `Confirm`.
 
-    ![](./images/5.png)
+    ![](./images/_5.png)
 
 A number of fine-grained roles can be assigned to a given service account. These are the same roles that can be assigned to users. Each role is represented by a row. Each row has a scope, which is either Organization or the name of a particular cluster. If the role is Cluster Administrator, Cluster Operator, or Cluster Developer, assigning it at the organization scope means that it applies to all clusters in the organization.
 

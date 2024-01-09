@@ -1,5 +1,5 @@
 
-# Lab 15: Deploy Docker Container with Terraform
+# Lab 14: Deploy Docker Container with Terraform
 
 
 ## Before you begin
@@ -68,6 +68,8 @@ Provision the NGINX server container with apply. When Terraform asks you to conf
 `terraform apply`
 
 Verify the existence of the NGINX container by visiting localhost:8000 in your web browser or running docker ps to see the container.
+
+![](./images/_9.png)
 
 NGINX running in Docker via Terraform
 
