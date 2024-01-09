@@ -15,7 +15,7 @@ Let's get started.
 There is no requirement for any setup.
 
 Run the following command in **terminal**:
-`cd ~/Desktop/gitlab-intro/lab8/ && mv git .git`
+`cd ~/Desktop/gitlab-terraform/lab8/ && mv git .git`
 
 
 
@@ -26,12 +26,12 @@ The friendly name allows you to refer to the location in other commands. Your lo
 
 **Task**
 
-This environment has a remote repository location of `/root/Desktop/gitlab-intro/remote-project/1`. Using git remote, add this remote location with the name origin.
+This environment has a remote repository location of `/root/Desktop/gitlab-terraform/remote-project/1`. Using git remote, add this remote location with the name origin.
 
 
 **Solution**
 
-`git remote add origin /root/Desktop/gitlab-intro/remote-project/1`
+`git remote add origin /root/Desktop/gitlab-terraform/remote-project/1`
 
 
 ### Step 2 - Git Push
@@ -61,8 +61,8 @@ There should be terminal opened already. You can also open another New terminal 
 Let's make some change from another folder and push them to remote. Run following remote in **terminal 2**:
 
 ```
-cd ~/Desktop/gitlab-intro/duplicate/ && mv git .git
-git remote add origin /root/Desktop/gitlab-intro/remote-project/1
+cd ~/Desktop/gitlab-terraform/duplicate/ && mv git .git
+git remote add origin /root/Desktop/gitlab-terraform/remote-project/1
 git pull origin master
 
 echo "new file" >> newfile.txt
