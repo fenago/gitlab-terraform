@@ -1,5 +1,5 @@
 
-# Lab 14: Deploy Docker Container with Terraform
+# Lab 6: Deploy Docker Container with Terraform
 
 
 ## Before you begin
@@ -10,8 +10,33 @@
 
 **Password:** Will be provided by Instructor.
 
-2. Install Terraform using steps provided in **Lab 5** in the VM, after that you can provision an NGINX server using Docker.
+2. Install Terraform using steps provided below in the VM. After that, you can provision an NGINX server using Docker.
 
+
+```
+cd ~/
+
+wget https://releases.hashicorp.com/terraform/1.6.6/terraform_1.6.6_linux_amd64.zip
+
+unzip terraform_1.6.6_linux_amd64.zip
+```
+
+Move the Terraform binary to one of the listed locations. This command
+assumes that the binary is currently in your downloads folder and that
+your `PATH` includes
+`/usr/local/bin`, but you can customize it if your locations are different.
+
+
+```
+sudo mv ~/terraform /usr/local/bin/
+```
+
+### Verify the installation
+
+Verify that the installation worked by opening a new terminal session
+and listing Terraform\'s available subcommands.
+
+`terraform -help`
 
 ## Deploy Docker Container
 
@@ -63,11 +88,14 @@ Initialize the project, which downloads a plugin called a provider that lets Ter
 
 `terraform init`
 
-Provision the NGINX server container with apply. When Terraform asks you to confirm type yes and press ENTER.
+Provision the NGINX server container with apply. When Terraform asks you to confirm type **yes** and press ENTER.
 
 `terraform apply`
 
-Verify the existence of the NGINX container by visiting localhost:8000 in your web browser or running docker ps to see the container.
+
+![](./images/_8.png)
+
+Verify the existence of the NGINX container by visiting `http://YOUR_VM_DNS_NAME.courseware.io:8000` in your web browser or running docker ps to see the container.
 
 ![](./images/_9.png)
 
@@ -87,5 +115,8 @@ To stop the container, run terraform destroy.
 
 `terraform destroy`
 
+![](./images/_10.png)
+
 You've now provisioned and destroyed an NGINX webserver with Terraform.
 
+You can exit the SSH session by running `exit` command.

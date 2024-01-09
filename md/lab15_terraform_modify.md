@@ -7,7 +7,7 @@ using the CockroachDB Cloud Terraform provider.
 
 ## Before you begin
 
-Before you start this lab, make sure you have created the cluster in Lab 6.
+Before you start this lab, make sure you have created the cluster in Lab 14.
 
 
 ## Update the Terraform configuration files
@@ -48,7 +48,7 @@ In this lab, you will update a CockroachDB Serverless cluster.
     ```
     
 
-3.  Create an environment variable named `COCKROACH_API_KEY`. Copy the `API key` created in Lab 6.
+3.  Create an environment variable named `COCKROACH_API_KEY`. Copy the `API key` created in Lab 14.
 
     
     ```

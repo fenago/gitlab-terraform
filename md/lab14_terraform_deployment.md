@@ -1,5 +1,5 @@
 
-# Lab 6: Initial Deployment of CockroachDB with Terraform
+# Lab 14: Initial Deployment of CockroachDB with Terraform
 
 
 Terraform is an infrastructure-as-code
