@@ -44,7 +44,7 @@ To begin with, we will create the files below:
 - provider.tf
 - output.tf
 
-The configuration below displays the contents of the main.tf file.
+The configuration below displays the contents of the `main.tf` file.
 
 ```
 resource "aws_instance" "my_vm" {
@@ -59,7 +59,7 @@ resource "aws_instance" "my_vm" {
 
 The resource block defined above would create (manage) an instance of type "t2.micro", using Ubuntu AMI. It also provides a name tag to the instance with the value "My EC2 Instance".
 
-The values are set as defaults in the variables.tf file below.
+The values are set as defaults in the `variables.tf` file below.
 
 ```
 variable "ami" {
@@ -81,7 +81,7 @@ variable "name_tag" {
 }
 ```
 
-Finally, we create the provider configuration in a separate file named provider.tf below.
+Finally, we create the provider configuration in a separate file named `provider.tf` below.
 
 ```
 terraform {
@@ -101,7 +101,7 @@ provider "aws" {
 }
 ```
 
-GitLab requires us to declare a provider block with a region attribute assigned explicitly. Optionally, we may create a file (output.tf) to define output variables as below.
+GitLab requires us to declare a provider block with a region attribute assigned explicitly. Optionally, we may create a file (`output.tf`) to define output variables as below.
 
 ```
 output "public_ip" {
