@@ -22,9 +22,18 @@ So within the Node-red Docker hub repo, you can see all the tags that are possib
 
 `https://hub.docker.com/r/nodered/node-red/tags`
 
-We've got latest and latest minimal.
+We've got latest and latest minimal. These are the ones we'll be focusing on. But we're going to start with just latest.
 
-These are the ones we'll be focusing on. But we're going to start with just latest.
+Create a directory named `terraform-docker-container`.
+
+`mkdir terraform-docker-container`
+
+Navigate into the working directory.
+
+`cd terraform-docker-container`
+
+In the working directory, create a file called `main.tf` and paste the following Terraform configuration into it.
+
 
 So the first thing we need to do is we need to download a Docker image that we will eventually deploy as a container. And the first thing we need to do is we need to provide a resource.
 
@@ -54,6 +63,11 @@ provider "docker" {}
 
 resource "docker_image" "nodered_image" {
   name  = "nodered/node-red:latest"
+}
+
+resource "docker_container" "nodered_container" {
+  image = docker_image.nodered_image.latest
+  name  = "nodered"
 
   ports {
     internal = 1880
@@ -110,16 +124,6 @@ What we're focused on here of course, is our node-red image.
 
 As you can see, it has downloaded and it is good to go.
 So our terraform apply worked and everything is good to go.
-
-
-Let's take a look and see what happens whenever we run another terraform plan:
-
-`terraform plan`
-
-As you can see, infrastructure is up to date, so there's no changes that are going to be made.
-
-As you can also see, it refreshed the state and validated that that image existed, which we can see
-here with `docker image ls` that Node-red image is available.
 
 
 Let's go ahead and destroy our infrastructure. Enter yes to confirm this destroy
