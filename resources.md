@@ -9,3 +9,7 @@ Terraform Apply:  https://developer.hashicorp.com/terraform/cli/commands/apply
 Terraform Console and Outputs:  https://developer.hashicorp.com/terraform/cli/commands/console
 https://developer.hashicorp.com/terraform/language/values/outputs
 
+Terraform Join Function:  https://developer.hashicorp.com/terraform/language/functions/join
+
+
+
