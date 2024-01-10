@@ -13,4 +13,6 @@ Terraform Join Function:  https://developer.hashicorp.com/terraform/language/fun
 
 Terraform Random:  https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string
 
+https://github.com/fenago/gitlab-terraform/blob/main/md/lab16_terraform_nodered.md
+
 
