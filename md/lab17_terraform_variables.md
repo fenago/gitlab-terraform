@@ -1,8 +1,6 @@
 
 # Lab 17: Terraform Variables
 
-Hello and welcome back.
-
 In this lab, we're going to cover a pretty foundational concept in TerraForm and well, pretty much
 any programming construct, and that is variables.
 
