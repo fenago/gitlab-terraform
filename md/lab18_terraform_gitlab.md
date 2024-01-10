@@ -13,7 +13,7 @@ In this lab, we will look into Terraform configuration, which creates an EC2 ins
 
 As a prerequisite, we need a Gitlab account. Create one here and log in to the same.
 
-Ensure you have runners available to run your jobs.
+Ensure you have runners available to run your jobs (already created in Lab 10).
 
 **Important!** Disable shared runners for all the projects that you create. Otherwise, gitlab will fail your pipeline and ask for account verification.
 
