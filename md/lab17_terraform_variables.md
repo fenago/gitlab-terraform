@@ -1,5 +1,6 @@
 
-# Lab 16: Using Docker with Terraform
+# Lab 17: Terraform Variables
+
 Hello and welcome back.
 
 In this lab, we're going to cover a pretty foundational concept in TerraForm and well, pretty much
