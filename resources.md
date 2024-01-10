@@ -11,5 +11,6 @@ https://developer.hashicorp.com/terraform/language/values/outputs
 
 Terraform Join Function:  https://developer.hashicorp.com/terraform/language/functions/join
 
+Terraform Random:  https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string
 
 
